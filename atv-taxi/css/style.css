@@ -1,45 +1,217 @@
 html {
-  font-size: clamp(1rem, calc(0.5rem + 0.8vw), 1.625rem);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: clamp(1rem, calc(0.67rem + 1vw), 4rem);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
-header{
-    text-align: center;
-    padding: 5vw 0 0 0;
+h1 {
+  font-size: 6vw;
 }
 
-header nav ul li.font-yellow{
-    color: #FBBC05;
+h2 {
+  font-size: 5.5vw;
 }
 
-header nav ul li{
-    margin: 20px 0 0 0;
+h3 {
+  font-size: 5vw;
 }
 
-header nav ul li.border-yellow{
-    background-color: #FBBC05;
-    color: white;
-    padding: 16px 8px 16px 8px ;
-    border-radius: 5px;
-    display: inline-block;
+p {
+  font-size: 3vw;
 }
 
+header a{
+  font-size: 3vw;
+}
 
+header {
+  text-align: center;
+  padding: 5vw;
+}
+
+header img {
+  width: 15vw;
+}
+
+header nav ul li {
+  margin: 3vw;
+}
+
+header nav ul li a.font-yellow {
+  color: #fbbc05;
+}
+
+header nav ul li a.button-yellow {
+  background-color: #fbbc05;
+  color: white;
+  padding: 1.5vw 3vw;
+  border: 5px;
+  display: inline-block;
+  border-radius: 2vw;
+}
+
+section.banner {
+  background-image: url(../images/background-banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 3vw 5vw 3vw 5vw;
+  margin: 5vw 0;
+}
+
+section.banner p {
+  margin: 3vw 0;
+}
+
+section.banner p.buttons {
+  color: rgb(104, 104, 104);
+  gap: 2vw;
+  display: flex;
+}
+
+section.banner p.buttons a {
+  background-color: #252b42;
+  display: inline-block;
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  color: #ffffff;
+  align-items: center;
+  border-radius: 2vw;
+}
+
+section.banner p.buttons img {
+  height: 4vw;
+}
+
+section.banner div.image img{
+  display: none;
+}
+
+section.ready div.img{
+  display: none;   /* Faz a imagem sumir */
+}
+
+section.ready {
+  text-align: center;
+  padding: 3vw 5vw 3vw 5vw;
+}
+
+section.ready p{
+  color: gray;
+}
+
+section.ready h2{
+  font-family: 1.7rem;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+
+section.ready div.lista ul li{
+  margin: 20px 0 20px 0;
+}
+
+section.ready div.lista ul li h3{
+  font-size: 1.1rem ;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+
+section.download{
+  background:#fbbc05 ;
+  border-radius: 10px;
+  margin: 3vw 5vw 3vw 5vw;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+section.downlod h2{
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
 
 @media only screen and (min-width: 600px) {
-    header nav{
-        display: flex;
-        justify-content: space-between; /* joga para a direita */
-    }
-    header nav ul{
-        display: flex;
-        gap: 40px ;
-        align-items: center; /* alinha se tiver torto */
-    }
-    header{
-        padding: 2vw 5vw 2vw 5vw;
-    }
-        
-    
+  h1 {
+    font-size: 5vw;
+  }
 
-} 
+  h2 {
+    font-size: 4.5vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  header a {
+    font-size: 2vw;
+  }
+  header {
+    padding: 2vw;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+  }
+
+  header nav ul li {
+  margin: 0;
+}
+
+  section.banner {
+    display: flex;
+    background-size: 100% auto;
+    align-items: center;
+    padding: 3vw 10vw 0 10vw;
+  }
+
+  section.banner div.image img {
+    display: block;
+    width: 50vw;
+    margin: 3vw 0 0 0;
+  }
+
+  section.ready div.img{
+    display: block;    /* Faz a imagem voltar */
+  }
+
+  section.ready > p{ /* section.ready > p faz com  o que só o filho direto p receba*/
+    padding: 3vw 20% 3vw 20%;  /* comprimie a área escrita */
+  }
+
+  section.ready > div{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  section.ready div.lista ul{
+    display: flex;
+    flex-wrap: wrap;    /* faz um elemento cair se não ouver espaço */
+    gap: 30px;
+    width: 40vw;
+  }
+
+  section.ready div.lista ul li{
+    width: 40%;
+  }
+
+  section.download{
+    padding: 3vw 3vw 3vw 3vw;
+  }
+
+  section.download p{
+    width: 20%;
+  }
+}
