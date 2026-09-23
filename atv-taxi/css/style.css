@@ -5,21 +5,6 @@ html {
     Arial, sans-serif;
 }
 
-h1 {
-  font-size: 6vw;
-}
-
-h2 {
-  font-size: 5.5vw;
-}
-
-h3 {
-  font-size: 5vw;
-}
-
-p {
-  font-size: 3vw;
-}
 
 header a{
   font-size: 3vw;
@@ -125,29 +110,49 @@ section.download{
   padding: 10px 10px 10px 10px;
 }
 
-section.downlod h2{
-  font-size: 1.7rem;
-  font-weight: 700;
-  padding: 0 0 20px 0;
-}
+  section.download h2{
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0 ;
+  }
+
+  section.download button{
+    background: #252b42;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+  }
+
+  section.services{
+    margin: 10vw 5vw 3vw 5vw;
+  }
+
+  section.services div.text{
+    text-align: left;
+    justify-content: right;
+  }
+
+  section.services h2{
+    font-size: 1.1rem;
+  }
+  section.services div.text{
+    margin: 0 0 20px 0;
+  }
+
+   section.services div.right ul li{
+    background: #f6f6f6;
+    padding: 20px 20px 20px 20px ;
+    margin: 10px 0 10px 0;
+   }
+
+  section.services div.right ul{
+    padding: 0 3vw 0 3vw ;
+  }
+
+   section.services div.right ul li h3{
+    font-size: 1.07rem;    
+    padding: 45px 0 20px 0;
+   }
 
 @media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 5vw;
-  }
-
-  h2 {
-    font-size: 4.5vw;
-  }
-
-  h3 {
-    font-size: 4vw;
-  }
-
-  p {
-    font-size: 2vw;
-  }
-
   header a {
     font-size: 2vw;
   }
@@ -209,9 +214,30 @@ section.downlod h2{
 
   section.download{
     padding: 3vw 3vw 3vw 3vw;
+    background: url(../images/iphone-pet-ui.png) no-repeat, url(../images/iphone-pet-ui.png) no-repeat, #fbbc05 ; /* coloca uma imagem no background e sem reprtir a imagem */
+    background-size: auto 100%, auto 90% ; /* o primeiro é para o primeiro elemento e o segundo depois da virgula para o segundo elemento */
+    background-position: center 9vw, 90%  -14vw; /* cada um é uma posição ne horizontal e vertical */
   }
 
+
   section.download p{
-    width: 20%;
+    width: 25%;
+    margin: 0 0 5vw 0;
+  }
+
+  section.services{
+    display: flex;
+    width: 80%;
+    gap: 10vw;
+  }
+
+  section.services div.text{
+    width: 30%;
+  }
+
+  section.services ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
   }
 }
